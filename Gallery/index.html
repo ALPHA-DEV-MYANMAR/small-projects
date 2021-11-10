@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+
+        #file {
+            display: block;
+            margin: 10px;
+        }
+
+        .home{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .gallery-img{
+            width: 100%;
+            box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #gallery{
+            columns: 3 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="home">
+        <div>
+            <input type="file" id="file" accept="image/jpeg,image/png" multiple>
+            <img src="" id="preview" alt="">
+        </div>
+    </div>
+
+    <div id="gallery"></div>
+
+    <script src="action.js"></script>
+
+</body>
+
+</html>

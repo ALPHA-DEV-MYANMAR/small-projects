@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+
+/* Home Section */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/city.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+}
+
+.home::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+    background: #40E0D0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.home-profile img{
+    border-radius: 50%;
+}
+
+.news{
+    position: absolute;
+    top: 50px;
+    color: white;
+    margin-right: 10px;
+    left: 50px;
+}
+
+.media{
+    position: absolute;
+    top: 50px;
+    color: yellow;
+    margin-left: 10px;
+    left: 100px;
+}
+
+.text{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+/* Info Section*/
+
+.info{
+    columns: 3 300px;
+    padding: 10px;
+}
+
+.information{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.information img{
+    width: 100%;
+}
